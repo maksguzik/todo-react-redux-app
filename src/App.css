@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
+.Wrapper{
+    height:100vh;
+    width:1600px;
+    border:1px solid rgb(6, 11, 82);
+    border-top:none;
+    border-bottom:none;
+    background-color:rgb(0, 204, 255);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Container{
+    height:100vh;
+    width:1600px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* .Footer{
+    height:10vh;
+    width:1600px;
+    border-top-width:5px;
+    border-top-style:solid;
+    border-top-color:rgb(226, 192, 43);
+    text-align:center;
+    line-height:20vh;
+    font-size:200px;
+} */
+
+.Input{
+    width:800px;
+    height:70px;
+    margin-top: 100px;
+    border:2px solid rgb(6, 11, 82);
+    font-size:20px;
+    text-align:center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Input::placeholder{
+    color:rgb(6, 11, 82);
 }
 
-.App-link {
-  color: #61dafb;
+.List{
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    width:800px;
+    height:60vh;
+    display: inline-block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.NameOfList{
+    width:804px;
+    height:60px;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-radius:10px;
+    background-color:rgb(6, 11, 82);
+    color:aliceblue;
+    line-height:60px;
+    font-size:30px;
+    display: inline-block;
+}
+
+.Line{
+    width:716px;
+    height:60px;
+    font-size:20px;
+    color:aliceblue;
+    background-color:rgb(12, 96, 223);
+    line-height:60px;
+    border-radius:10px;
+    border:2px solid aliceblue;
+    display: inline-block;
+}
+
+.EditDiv{
+    width:712px;
+    height:58px;
+    margin-left:40px;
+    margin-right:40px;
+    font-size:20px;
+    color:aliceblue;
+    text-align: center;
+    background-color:rgb(12, 96, 223);
+    line-height:56px;
+    border-radius:10px;
+    border:2px solid aliceblue;
+    display: inline-block;
+}
+
+.EditDiv::placeholder{
+    color:rgb(6, 11, 82);
+}
+
+.List::-webkit-scrollbar { 
+    display: none;
+}
+
+/* #ButtonsContainer{
+    float:right;
+} */
+
+.InteractButton{
+    height:64px;
+    width:40px;
+    font-size:20px;
+    color:rgb(6, 11, 82);
+    background-color:rgb(223, 184, 12);
+    line-height:60px;
+    border-radius:10px;
+}
+
+button.InteractButton{
+    cursor:pointer;
+}
+button.NameOfList{
+    cursor:pointer;
+}
+
+.DeleteDone{
+    width:200px;
+    height:50px;
+    margin-top:10px;
+    border-radius:10px;
+    margin-right:200px;
+    background-color:rgb(6, 11, 82);
+    color:aliceblue;
+    line-height:50px;
+    font-size:20px;
+}
+
+.DeleteAll{
+    width:200px;
+    height:50px;
+    margin-top:10px;
+    border-radius:10px;
+    margin-left:200px;
+    background-color:rgb(6, 11, 82);
+    color:aliceblue;
+    line-height:50px;
+    font-size:20px;
+}
+
+button.DeleteAll{
+    cursor:pointer;
+}
+
+button.DeleteDone{
+    cursor:pointer;
 }
