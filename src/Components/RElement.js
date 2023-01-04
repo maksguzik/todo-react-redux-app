@@ -19,8 +19,7 @@ let Line = (props) =>{
             value={props.value}
             onChange={props.onChange}
             onKeyDown={props.onKeyDown}
-            maxLength="41"
-            placeholder={"No matter what, you have to write something"}
+            placeholder={"You have to write something, while you decided to edit"}
             autoFocus
             ></input>
         )

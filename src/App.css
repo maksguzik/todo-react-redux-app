@@ -1,3 +1,6 @@
+html *{
+    font-family:Arial, Helvetica, sans-serif;
+}
 .Wrapper{
     height:100vh;
     width:1600px;
@@ -14,17 +17,6 @@
     align-items: center;
     justify-content: center;
 }
-
-/* .Footer{
-    height:10vh;
-    width:1600px;
-    border-top-width:5px;
-    border-top-style:solid;
-    border-top-color:rgb(226, 192, 43);
-    text-align:center;
-    line-height:20vh;
-    font-size:200px;
-} */
 
 .Input{
     width:800px;

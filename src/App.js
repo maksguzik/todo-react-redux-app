@@ -35,9 +35,19 @@ let App = () => {
     } 
   }
 
+  const InputWidth = (text) =>{
+    let canvas = document.createElement("canvas");
+    let context = canvas.getContext("2d");
+    context.font = "20px Arial, Helvetica, sans-serif";
+    let width = context.measureText(text).width;
+    return width;
+  }
+
   let HandleChange = (event) =>{
     event.preventDefault();
-    setinputHolder(event.target.value);
+    if(InputWidth(event.target.value)<=710){
+      setinputHolder(event.target.value);
+    }
   }
 
   let TaskDone = (index) =>{
@@ -85,7 +95,9 @@ let App = () => {
 
   let HandleEditChange = (event) =>{
     event.preventDefault();
-    setEditInputHolder(event.target.value);
+    if(InputWidth(event.target.value)<=710){
+      setEditInputHolder(event.target.value);
+    }
   }
 
   return (
@@ -98,8 +110,7 @@ let App = () => {
           placeholder={"Start make your own todo list"}
           // Start make your own todo list
           onKeyDown={ToDoDiv}
-          onChange={HandleChange}
-          maxLength="41"></input>
+          onChange={HandleChange}></input>
           </form>
         </div>
         <div>
