@@ -21,10 +21,12 @@ let App = () => {
       setinputHolder("");
       setDone(done.concat([false]));
       setEditAbleDiv(editAbleDiv.concat([false]));
+    }else if(element.key==='Enter' && !inputHolder.length){
+      element.preventDefault();
     }
   }
 
-  let HandleSubmit = () =>{
+  let HandleSubmit = (element) =>{
     if(inputHolder.length){
       setTodo(todo.concat([inputHolder]));
       setinputHolder("");
