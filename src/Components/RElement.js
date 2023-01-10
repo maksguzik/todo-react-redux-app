@@ -52,7 +52,7 @@ let Line = (props) =>{
         }
     }
 
-    let HandleEditChange = (event) =>{
+    const HandleEditChange = (event) =>{
         event.preventDefault();
         if(InputWidth(event.target.value)<=710){
           dispatch(EditInputChanged(event.target.value));
