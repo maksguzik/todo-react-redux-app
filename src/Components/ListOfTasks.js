@@ -1,7 +1,7 @@
-import Line from './RElement.js'
+import Task from './Task.js'
 import {useSelector} from 'react-redux'
 
-let List = () =>{
+const ListOfTasks = () =>{
 
     const todo = useSelector((state)=>state.todo);
 
@@ -10,7 +10,7 @@ let List = () =>{
         <div className="List">
           {todo.map((elementVal,index)=> { 
             return (
-          <Line  
+          <Task  
           key={elementVal.toString()+index.toString()}
           index={index}
           />
@@ -20,4 +20,4 @@ let List = () =>{
     )
 }
 
-export default List;
+export default ListOfTasks;
