@@ -1,8 +1,8 @@
 const InputWidth = (text) =>{
-    let canvas = document.createElement("canvas");
-    let context = canvas.getContext("2d");
+    const canvas = document.createElement("canvas");
+    const context = canvas.getContext("2d");
     context.font = "20px Arial, Helvetica, sans-serif";
-    let width = context.measureText(text).width;
+    const width = context.measureText(text).width;
     return width;
   }
 
