@@ -9,7 +9,7 @@ import inputReducer from './features/inputHolder.js'
 import todoReducer from './features/todo.js'
 import editInputReducer from './features/editInputHolder.js'
 import doneReducer from './features/done.js'
-import editAbleDivReducer from './features/editAbleDiv.js'
+import editableDivReducer from './features/editableDiv.js'
 
 
 const store = configureStore({
@@ -18,7 +18,7 @@ const store = configureStore({
     todo : todoReducer,
     editInputHolder : editInputReducer,
     done : doneReducer,
-    editAbleDiv : editAbleDivReducer,
+    editableDiv : editableDivReducer,
   },
 })
 
